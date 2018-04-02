@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.2" icons="true" automaticImage="JPEG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="HashGen" project="BlockChain" file="/BlockChain/src/HashGen.java" binary="false" 
+    label="hashGen" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="54" y="0"/>    
+    <execution id="2">      
+      <position height="63" width="0" x="0" y="85"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="63" width="0" x="0" y="205"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="63" width="0" x="0" y="326"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="84" width="0" x="0" y="418"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="21" width="0" x="0" y="460"/>    
+    </execution>    
+    <execution id="14">      
+      <position height="63" width="0" x="0" y="552"/>    
+    </execution>  
+  </object>  
+  <object id="17" language="java" name="Block" project="BlockChain" file="/BlockChain/src/Block.java" binary="false" 
+    label="block" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="16">      
+      <position height="21" width="0" x="0" y="573"/>    
+    </execution>  
+  </object>  
+  <object id="18" language="java" name="Block" project="BlockChain" file="/BlockChain/src/Block.java" binary="false" 
+    label="block3" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="10">      
+      <position height="21" width="0" x="0" y="347"/>    
+    </execution>  
+  </object>  
+  <object id="19" language="java" name="Block" project="BlockChain" file="/BlockChain/src/Block.java" binary="false" 
+    label="block2" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="7">      
+      <position height="21" width="0" x="0" y="226"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="84" width="0" x="0" y="147"/>    
+    </execution>    
+    <execution id="22">      
+      <position height="21" width="0" x="0" y="189"/>    
+    </execution>  
+  </object>  
+  <object id="23" language="java" name="Block" project="BlockChain" file="/BlockChain/src/Block.java" binary="false" 
+    label="block1" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="4">      
+      <position height="21" width="0" x="0" y="106"/>    
+    </execution>  
+  </object>  
+  <object id="24" language="java" name="BlockChainMain" project="BlockChain" file="/BlockChain/src/BlockChainMain.java" 
+    binary="false" label="blockChainMain" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="54" y="0"/>    
+    <execution id="25">      
+      <position height="84" width="0" x="0" y="141"/>    
+    </execution>    
+    <execution id="27">      
+      <position height="21" width="0" x="0" y="183"/>    
+    </execution>    
+    <execution id="28">      
+      <position height="84" width="0" x="0" y="269"/>    
+    </execution>    
+    <execution id="30">      
+      <position height="21" width="0" x="0" y="311"/>    
+    </execution>    
+    <execution id="31">      
+      <position height="63" width="0" x="0" y="407"/>    
+    </execution>  
+  </object>  
+  <object id="34" language="java" name="Block" project="BlockChain" file="/BlockChain/src/Block.java" binary="false" 
+    label="block4" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="33">      
+      <position height="21" width="0" x="0" y="428"/>    
+    </execution>    
+    <execution id="35">      
+      <position height="84" width="0" x="0" y="527"/>    
+    </execution>    
+    <execution id="37">      
+      <position height="21" width="0" x="0" y="569"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="Block(java.lang.String,java.lang.String)" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="convertToHash():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="9" operation="mineBlock(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="12" operation="translate(java.lang.String):java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="15" operation="convertToHash():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>  
+  <message id="21" operation="Block(java.lang.String,java.lang.String)" asynchronous="false">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="26" operation="isChainValid():java.lang.Boolean" asynchronous="false">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>  
+  <message id="29" operation="main(java.lang.String[]):void" asynchronous="false">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="30"/>  
+  </message>  
+  <message id="32" operation="mineBlock(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="33"/>  
+  </message>  
+  <message id="36" operation="Block(java.lang.String,java.lang.String)" asynchronous="false">    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="37"/>  
+  </message>
+</sequence-diagram>
