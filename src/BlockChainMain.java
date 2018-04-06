@@ -1,21 +1,20 @@
 /*
  * Name: 		  Eshan Sharma
- * Last Addition: 2/23/18 @ 3:42 PM.
+ * Last Addition: 4/5/18 @ 12:56 PM.
  * 
  * ----Readme----
- * Prepare for the paragraphs in the comment section. The main method will be executing all the code (Duh). The main method will now mine as many blocks as we please.
+ * Prepare for the paragraphs in the comment section. The main method will be executing all the code. The main method will now mine as many blocks as we please.
  * Currently I have initialized 4 blocks with a 0 difficulty for the sake of time as on school computers for testing, even a difficulty of 1 takes so long. This uses
  * proof of work to acquire the token and presents you with the Hash at first and then outputs the block chain at the end. 
  *
- * 
  * NOTE: This does require that special library. More info on that More Information about the library can be found at https://github.com/google/gson.
  */
 
 import java.util.*;
+import java.security.Security;
+import java.util.Base64;
 
 //This user library can be found from https://repo1.maven.org/maven2/com/google/code/gson/gson/2.6.2/gson-2.6.2.jar
-//It can be used for peer2peer things (haven't figured that part out yet but we can use whatever we want. I just found this online on reddit as users
-//stated this would be the best one for creating a blockchain. If you have anything better, let me know.
 import com.google.gson.GsonBuilder;
 
 
@@ -27,7 +26,7 @@ public class BlockChainMain
 	public static ArrayList<Block> twoChainz = new ArrayList<Block>();
 	
 	//I set a static difficulty of 1 as it was recommended by the person who taught me how to write this. You can change the difficulty as you please to check the times.
-	public static int difficulty = 5;
+	public static int difficulty = 1;
 	
 	public static void main (String[] args)
 	{

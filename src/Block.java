@@ -1,18 +1,11 @@
 /*
  * Name: 		  Eshan Sharma
- * Last Addition: 2/23/18 @ 10:34 AM.
+ * Last Addition: 4/5/18 @ 12:56 PM..
  * 
  * ----Readme----
  * Block.Java will create the object and the constructor will be storing the object while accepting two parameters.
  * The data itself, and a link to the previous hash value. The genesis which is the first block will not have a previous
  * hash value. It will be set to 0 in the main method. 
- * 
- * Eventually I need to add a way where this class or the HashGen class will check to see if a previous has value has been
- * changed or not. 
- * 
- * Note: The timestamp variable is currently calculates the milliseconds since 1/1/1970. Not a very efficient way to keep
- * track of time but I did not know how to do it and I just looked through the API and found something for now. Since
- * it counts from 1/1/1970 till now, the larger value will be newer if you look at the sequence of hashes.  
  * 
  */
 
